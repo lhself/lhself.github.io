@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)http://www.html5tricks.com/demo/jiaoben1892/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>爱你的，LOVE</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+<div id="mainDiv">
+	<div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
+		<div id="code" style="margin-top: 112.5px;">
+			<span class="comments">/**</span><br>
+			<span class="space"><span class="comments">*1994—02-14,</span><br>
+			<span class="space"><span class="comments">*1993-10-30.</span><br>
+			<span class="space"><span class="comments">*/</span><br>
+			Boy name = <span class="keyword">Mr</span> Li<br>
+			Girl name = <span class="keyword">Mrs</span> Tian<br>
+			<span class="comments">// Fall in love river. </span><br>
+			If I were to fall in love<br>
+			<span class="comments">//　我爱你，不是因为你是一个怎样的人.</span><br>
+			It would have to be with youYour eyes, your smile;<br>
+			<span class="comments">// 而是因为我喜欢与你在一起时的感觉.</span><br>
+			The way you laugh;<br>
+			<span class="comments">// 我不能给你全世界，但是，我的世界，全部给你.</span><br>
+			The things you say and do   Take me to the places;<br>
+			<span class="comments">// Both wind and snow all over the sky.</span><br>
+			<span class="comments">// Whether on foot or 132 kilometers.</span><br>
+			<span class="keyword">My heart never knew</span> So， <span class="keyword">f I were to fall in love</span>;<br>
+			<span class="keyword">Ed  </span>Walter  <span class="keyword"></span>;<br>
+			<span class="placeholder"><span class="comments">// Whether it is right now</span><br>
+			<span class="placeholder"><span class="comments">// Still in the distant future.</span><br>
+			<span class="placeholder">The boy has but one dream;<br>
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br>
+			<br>
+			<br>
+			I want to say:<br>
+			Apple, I love you forever;<br>
+		</span></span></span></span></span></span></div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					点击>>
+                    <a href="index2.html"  style="text-decoration:none">执子之手，与子偕老</a>
+					<div class="signature">- WANG</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 03, 20);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+
+<iframe id="google_osd_static_frame_688287175726" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>
